@@ -2,3 +2,7 @@
 tmp.txt
 *.exe
 *.o
+*.txt
+.directory
+
+.vscode/
