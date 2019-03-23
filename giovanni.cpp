@@ -1,3 +1,5 @@
+#include "definitions.h"
+
 si N;
 vec<si>V;
 //vec<pair<si,si>>perc;

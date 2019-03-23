@@ -1,17 +1,4 @@
-#pragma optimize("O3")
-#include <bits/stdc++.h>
-using namespace std;
-
-using si = long long;
-using ui = unsigned long long;
-using flt = long double;
-using ch = char;
-using str = string;
-template<class T>
-using vec = vector<T>;
-
-ifstream in{"input.txt"};
-ofstream out{"output.txt"};
+#include "definitions.h"
 
 #include "fabio.cpp"
 #include "giovanni.cpp"

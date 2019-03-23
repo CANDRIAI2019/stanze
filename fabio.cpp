@@ -1,3 +1,5 @@
+#include "definitions.h"
+
 int fabio(vec<si> stanze) {
 	si i = 0, N=stanze.size();
 	si spostamenti = 0;
