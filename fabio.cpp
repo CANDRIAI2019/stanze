@@ -2,7 +2,7 @@ int fabio(vec<si> stanze) {
 	si i = 0, N=stanze.size();
 	si spostamenti = 0;
 	while (1) {
-		sort(stanze.begin(), stanze.end());
+		sort(stanze.begin() + i, stanze.end());
 		while (i<N && stanze[i]==0) ++i;
 		if(i>=N-1) break;
 
