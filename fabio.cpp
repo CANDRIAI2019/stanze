@@ -1,25 +1,10 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-using si = long long;
-using ui = unsigned long long;
-using flt = long double;
-using ch = char;
-using str = string;
-template<class T>
-using vec = vector<T>;
-
-ifstream in{"input.txt"};
-ofstream out{"output.txt"};
-
-constexpr si maxv = 10, maxn = 3;
-
+#include "definitions.h"
 
 int fabio(vec<si> stanze) {
 	si i = 0, N=stanze.size();
 	si spostamenti = 0;
 	while (1) {
-		sort(stanze.begin(), stanze.end());
+		sort(stanze.begin() + i, stanze.end());
 		while (i<N && stanze[i]==0) ++i;
 		if(i>=N-1) break;
 
