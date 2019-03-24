@@ -1,3 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+using si = long long;
+using ui = unsigned long long;
+using flt = long double;
+using ch = char;
+using str = string;
+template<class T>
+using vec = vector<T>;
+
+ifstream in{"input.txt"};
+ofstream out{"output.txt"};
+
+constexpr si maxv = 10, maxn = 3;
+
+
 int fabio(vec<si> stanze) {
 	si i = 0, N=stanze.size();
 	si spostamenti = 0;
@@ -9,7 +26,7 @@ int fabio(vec<si> stanze) {
 		//for(auto&& st : stanze) cout << st << " "; cout << "\n";
 
 		bool finished = false;
-		for(int p = i; p != N-1; ++p) {
+		for(int p = N-1; p != i; --p) {
 			if (stanze[p] == stanze[p+1]) {
 				stanze[p]--;
 				stanze[p+1]++;
@@ -17,7 +34,7 @@ int fabio(vec<si> stanze) {
 				break;
 			}
 		}
-		
+
 		if (!finished) {
 			stanze[i]--;
 			stanze[i+1]++;
@@ -25,4 +42,32 @@ int fabio(vec<si> stanze) {
 		++spostamenti;
 	}
 	return spostamenti;
+}
+vec<si> getVals(si N) {
+	vec<si> res;
+	for(si n = 0; n<N; ++n)
+		res.push_back(rand()%maxv);
+	return res;
+}
+int main() {
+
+    int n;
+    cin>>n;
+    vector<si> a(n);
+    for(auto i:a)
+        cin>>i;
+    cout<<fabio(a)<<endl;
+	/*while (1) {
+		vec<si> vals = getVals(maxn);
+
+		for (auto v : vals) cout << v << " ";
+		cout << flush;
+
+		si fabio_res = fabio(vals);
+		cout << "\nfabio: " << fabio_res << flush;
+
+		//si giovanni_res = giovanni(vals);
+		//cout << " -- giovanni: " << giovanni_res << "\n\n" << flush;
+		//assert(fabio_res==giovanni_res);
+	}*/
 }
