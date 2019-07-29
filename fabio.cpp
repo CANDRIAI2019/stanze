@@ -28,31 +28,3 @@ int fabio(vec<si> stanze) {
 	}
 	return spostamenti;
 }
-vec<si> getVals(si N) {
-	vec<si> res;
-	for(si n = 0; n<N; ++n)
-		res.push_back(rand()%maxv);
-	return res;
-}
-int main() {
-
-    int n;
-    cin>>n;
-    vector<si> a(n);
-    for(auto i:a)
-        cin>>i;
-    cout<<fabio(a)<<endl;
-	/*while (1) {
-		vec<si> vals = getVals(maxn);
-
-		for (auto v : vals) cout << v << " ";
-		cout << flush;
-
-		si fabio_res = fabio(vals);
-		cout << "\nfabio: " << fabio_res << flush;
-
-		//si giovanni_res = giovanni(vals);
-		//cout << " -- giovanni: " << giovanni_res << "\n\n" << flush;
-		//assert(fabio_res==giovanni_res);
-	}*/
-}
