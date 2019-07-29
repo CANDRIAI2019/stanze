@@ -1,12 +1,11 @@
 #ifndef _DEFINITIONS_HPP_
 #define _DEFINITIONS_HPP_
 
-#pragma optimize("O3")
 #include <bits/stdc++.h>
 using namespace std;
 
-using si = long long;
-using ui = unsigned long long;
+using si = std::int_fast32_t;
+using ui = std::uint_fast32_t;
 using flt = long double;
 using ch = char;
 using str = string;
