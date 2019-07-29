@@ -1,4 +1,4 @@
-#include "definitions.h"
+#include "definitions.hpp"
 
 int fabio(vec<si> stanze) {
 	si i = 0, N=stanze.size();

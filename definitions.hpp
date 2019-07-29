@@ -1,5 +1,5 @@
-#ifndef _DEFINITIONS_H_
-#define _DEFINITIONS_H_
+#ifndef _DEFINITIONS_HPP_
+#define _DEFINITIONS_HPP_
 
 #pragma optimize("O3")
 #include <bits/stdc++.h>

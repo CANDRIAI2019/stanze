@@ -1,4 +1,4 @@
-#include "definitions.h"
+#include "definitions.hpp"
 
 #include "fabio.cpp"
 #include "giovanni.cpp"

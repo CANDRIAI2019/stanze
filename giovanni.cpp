@@ -1,4 +1,4 @@
-#include "definitions.h"
+#include "definitions.hpp"
 
 si N;
 vec<si>V;
