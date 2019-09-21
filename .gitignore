@@ -1,6 +1,8 @@
 
 tmp.txt
 *.exe
+executable
+a.out
 *.o
 *.txt
 .directory
