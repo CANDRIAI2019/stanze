@@ -13,5 +13,9 @@ template<class T>
 using vec = vector<T>;
 
 constexpr si SiMax = 26000;
+#define SORT sort
+//#define SORT radix_sort<vec<si>::iterator, SiMax>
+
+#define at operator[]
 
 #endif
